@@ -2,6 +2,7 @@
 
 ## Contents
 
+- [How to Run](#instructions-to-run-assignment-locally)
 - [Notes](#notes)
 - [App Information](#app-information)
 
@@ -59,22 +60,26 @@ I created the app with create-react-app. I managed to organize the components as
 
 ### Instructions to run assignment locally
 
-Install Dependencies
+**Install Dependencies**
 
-`yarn setup`
+```shell
+yarn setup
+```
 
-Run Locally
+**Run Locally**
 
-`yarn dev`
+```shell
+yarn dev
+```
 
 Note: Mongodb is hosted in Mongo Atlas. It is set to receive all incoming requests (temporarily) so that any one can test this app locally.
 
-Run server tests
+**Run server tests**
 
-`cd server`
-
-`yarn test`
-
+```shell
+cd server
+yarn test
+```
 ### What did you not include in your solution that you want us to know about?
 
 The most important thing I didn't add to this project was FE tests. I was very hesitant because tests are **very** valuable; however, I felt I already invested too much time on this project. I did add tests for the BE.
