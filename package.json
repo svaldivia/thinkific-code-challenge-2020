@@ -47,5 +47,6 @@
     "start": "node build/index.js",
     "postinstall": "tsc",
     "heroku-postbuild": "cd client && yarn && yarn build"
-  }
+  },
+  "engines": { "node": "14.5.0" }
 }
