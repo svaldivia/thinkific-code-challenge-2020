@@ -1,17 +1,11 @@
 {
   "compilerOptions": {
+    "target": "es6",
     "module": "commonjs",
-    "target": "esnext",
-    "jsx": "react",
-    "lib": ["dom", "esnext"],
-    "strict": true,
-    "noEmit": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "noUnusedLocals": false,
-    "allowJs": true,
-    "rootDir": "./",
-    "outDir": "./build"
+    "outDir": "build",
+    "sourceMap": true,
+    "esModuleInterop": true
   },
-  "exclude": ["node_modules", "build", ".cache"]
+  "include": ["server/**/*.ts"],
+  "exclude": ["node_modules", ".cache", "client"]
 }

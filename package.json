@@ -40,10 +40,11 @@
   },
   "scripts": {
     "client": "cd client && yarn start",
-    "server": "NODE_ENV=development nodemon ./server/index.ts",
+    "server": "NODE_ENV=development nodemon ./index.ts",
     "dev": "run-p server client",
-    "build": "tsc --project ./server",
-    "start": "node ./server/index.ts",
+    "build": "tsc",
+    "start": "node build/index.js",
+    "postinstall": "tsc",
     "heroku-postbuild": "cd client && yarn && yarn build"
   }
 }

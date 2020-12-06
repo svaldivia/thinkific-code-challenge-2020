@@ -92,7 +92,6 @@ router.put(
   async (req, res, next) => {
     const tokenUser = req.user as User
     const { count: newCount } = req.body
-    console.log(newCount, typeof newCount, req.body)
     if (isNaN(newCount) || newCount < 0 || newCount % 1 !== 0) {
       return next({
         status: 400,
