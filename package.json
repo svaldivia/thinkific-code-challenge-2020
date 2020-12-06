@@ -40,9 +40,10 @@
     "passport-local": "^1.0.0"
   },
   "scripts": {
+    "setup": "yarn && cd server && yarn && cd ../client && yarn",
     "client": "cd client && yarn start",
     "server": "NODE_ENV=development nodemon ./index.ts",
-    "dev": "run-p server client",
+    "dev": "NODE_ENV=development run-p server client",
     "build": "tsc",
     "start": "node build/index.js",
     "postinstall": "tsc",

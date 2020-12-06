@@ -23,7 +23,7 @@ node_modules
 .node_repl_history
 
 # dotenv environment variable files
-.env*
+# .env*
 
 # Mac files
 .DS_Store

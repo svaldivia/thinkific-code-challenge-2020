@@ -36,7 +36,7 @@ router.post(
     }
 
     const body = { _id: user._id, email: user.email }
-    // Added expiration of 5min to test jwt verifcation
+    // Added expiration of 5min to test jwt validation
     const token = jwt.sign({ user: body }, 'SECRET', { expiresIn: '5m' })
 
     res.json({ token })
